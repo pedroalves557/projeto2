@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Bebas+Neue&display=swap');
+
+:root{
+    --fonte1: Verdana,Geneva,tahoma, sans-serif;
+    --fonte2:'Bacasime Antique', serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    min-width: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte1);
+}
+header > h1 {
+    padding-top: 50px;
+text-transform: uppercase;
+}
+header > p{
+    padding-bottom: 50px;
+}
+a{
+    color: rgb(173, 76, 76);
+}
+section{
+    font-family: var(--fonte2);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 1.3em;
+}
+section > p {
+    padding-bottom: 2em;
+
+}
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right, center;
+    background-size: cover;
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right, center;
+    background-size: cover;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgba(51, 46, 46, 0.432);
+    color: white;
+    box-shadow: inset, 6px 6px 13px 0px black;
+    background-attachment: fixed;
+}
+section.imagem > p {
+background-color: rgba(0, 0, 0, 0.692);
+width: 400px;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
